@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Kimani Thuo - Personal Portfolio</title>
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,25 +12,31 @@
             background-color: #f4f4f4;
         }
         header, nav, section, article, footer {
-            max-width: 1200px;
-            margin: 0 auto;
             padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
         }
         header {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #ccc;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
+            display: flex;
+            justify-content: center;
             background-color: #444;
-            text-align: center;
         }
         nav ul li {
-            display: inline;
             margin: 0 15px;
         }
         nav ul li a {
@@ -39,41 +44,32 @@
             text-decoration: none;
             font-size: 1.1em;
         }
-        h1, h2, h3 {
-            color: #333;
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        p {
-            color: #555;
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
+        article h3 {
+            font-size: 1.5em;
         }
         footer {
             text-align: center;
+            padding: 20px;
             background-color: #333;
             color: white;
-            padding: 10px 0;
         }
         footer a {
-            color: #00f;
-            text-decoration: underline;
+            color: white;
         }
     </style>
 </head>
 <body>
-
     <!-- Header Section -->
     <header>
         <h1>Joseph Kimani Thuo</h1>
@@ -90,50 +86,54 @@
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Introduction Section -->
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>Hello, I’m Joseph Kimani Thuo. I am currently a front-end developer in training with ALX. I’m passionate about leveraging technology to solve everyday challenges in Kenya, such as corruption, governance issues, and inefficient service delivery. I aim to build user-friendly applications that address these problems.</p>
-        </section>
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hello! I’m Joseph Kimani Thuo, a passionate web developer specializing in creating intuitive and user-friendly websites. With a focus on solving real-world problems through technology, I’m on a journey to becoming a full-stack developer and exploring the world as a digital nomad.</p>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <article class="project">
-                <h3>Fines Payment System</h3>
-                <p>This project aims to create an easy-to-use mobile application that allows users to pay government fines instantly and transparently. The goal is to eliminate corruption and inefficiencies in public service departments. This project is currently in the user research phase.</p>
-                <a href="https://github.com/kimanithuo1/My_First_Portfolio.git" target="_blank">View Project</a>
-            </article>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Project 1 -->
+        <article class="project">
+            <h3>Project 1: GCGO Governance App</h3>
+            <p>An application aimed at tackling corruption by providing instant fines and improving public service delivery.</p>
+            <a href="https://github.com/kimanithuo1" target="_blank">View Project</a>
+        </article>
 
-            <article class="project">
-                <h3>GCGO Coffee Farming App</h3>
-                <p>An application designed to help coffee farmers in the Mt. Kenya region manage their farms more effectively, track production, and get updates on weather conditions. The goal is to support the agricultural industry in Kenya by providing real-time insights to farmers.</p>
-                <a href="https://github.com/kimanithuo1/My_First_Portfolio.git" target="_blank">View Project</a>
-            </article>
-        </section>
+        <!-- Project 2 -->
+        <article class="project">
+            <h3>Project 2: Coffee Farm Management Tool</h3>
+            <p>A tool for coffee farmers to monitor their plantations and optimize yield through data-driven insights.</p>
+            <a href="https://github.com/kimanithuo1" target="_blank">View Project</a>
+        </article>
+    </section>
 
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am currently studying front-end web development at ALX, where I’ve learned various skills including HTML, CSS, Git, and JavaScript. My ambition is to become a full-stack developer, and eventually a digital nomad, using my skills to solve real-world problems, travel, and explore new opportunities.</p>
-            <p>Besides coding, I have a strong interest in governance and addressing corruption. One of my key projects focuses on creating digital solutions for transparency and better governance, especially in Kenya. I also enjoy collaborating on open-source projects that have a positive impact on society.</p>
-        </section>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am currently enrolled in ALX’s Front-End Web Development course, where I am honing my skills in HTML, CSS, and JavaScript. I have a deep interest in solving Kenyan problems through technology and aspire to be a digital nomad, traveling while developing meaningful software. My key skills include:</p>
+        <ul>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Front-End Frameworks (React)</li>
+            <li>Version Control (Git, GitHub)</li>
+            <li>Problem Solving and Critical Thinking</li>
+        </ul>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email: <a href="mailto:jkimanithuo@gmail.com">jkimanithuo@gmail.com"</a></p>
-            <p>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/rkimani-thuo" target="_blank">LinkedIn</a></p>
-            <p>View my GitHub profile: <a href="https://github.com/kimanithuo1" target="_blank">GitHub</a></p>
-        </section>
-    </main>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me via email or connect with me on social media:</p>
+        <p>Email: <a href="mailto:jkimanithuo@gmail.com">jkimanithuo@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rkimani-thuo" target="_blank">My LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/kimanithuo1" target="_blank">My GitHub Profile</a></p>
+    </section>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Joseph Kimani Thuo - <a href="https://github.com/kimanithuo1/My_First_Portfolio" target="_blank">View My GitHub</a></p>
     </footer>
-
 </body>
 </html>
